@@ -1,0 +1,208 @@
+/* Variables */
+$primary-color: #2B1ECD;
+$text-color: #9B9B9B;
+$title-color: #4A4A4A;
+
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/Fill\ 5.png");
+    background-repeat: no-repeat;
+    background-position: 50% 30%; 
+}
+
+.navbar{
+    background-color: rgba(170, 170, 170, 0);
+    .nav-item{
+        .nav-link{
+            color: #fff;
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+        .btn-demo{
+            width: 89px;
+            //height: 40px;
+            background-color: #61FAE9;
+            border-radius: 2px;
+            color: #03463D;
+        }
+    }
+}
+
+.landing{
+    //background-color: red;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 260px;
+    color: #fff;
+
+    h6{
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    h1{
+        font-size: 45px;
+        padding-bottom: 10px;
+    }
+    p{
+        font-size: 16px;
+        padding-bottom: 50px;
+    }
+    .btn{
+        width: 174px;
+        height: 60px;
+        font-size: 15px;
+        color: $primary-color;
+        background-color: #fff;
+        //margin-top: 50px;
+    }
+    .right{
+        
+        img{
+            width: 400px;
+        }
+    }
+    
+}
+  
+.wrap{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+  
+  
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 110px;
+    padding-bottom: 150px;
+}
+.card{
+    width: 319px;
+    height: 331px;
+    border-radius: 6px;
+    border-style: none;
+    -webkit-box-shadow: 5px 10px 30px 0px rgba(40,26,204,0.12);
+    -moz-box-shadow: 5px 10px 30px 0px rgba(40,26,204,0.12);
+    box-shadow: 5px 10px 30px 0px rgba(40,26,204,0.12);
+    transition: all .2s ease-in-out;
+
+    .card-wrap{
+        width: 85%;
+        height: 85%;
+        margin: auto;
+    }
+
+    .title{
+        font-size: 22px;
+        color: $title-color;
+        padding-top: 20px;
+    }
+    img{
+        width: 59px;
+
+    }
+    .description{
+        font-size: 14px;
+        color: $text-color;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .btn{
+        width: 97.09px;
+        height: 31.58px;
+        font-size: 12px;
+        color: $primary-color;
+        border: solid 1px $primary-color;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .card:hover{
+        background-color: $primary-color;
+        transform: scale(1.1);
+        .title{
+            color: #fff;
+            font-size: 22px;
+        }
+        .description{
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+      
+}
+
+
+
+  @media screen and (max-width: 992px) {
+    .bg{
+        background-position: 50% 40%; 
+    }
+    
+    .landing{
+        display: inline;
+        font-size: 10px;
+       
+        .right{
+            margin: 0;
+            padding: 0;
+            img{
+                width: 100%;
+                padding-top: 200px;
+            }
+        }
+    }
+    .cards{
+        display: inline;
+        .card{
+            text-align: center;
+            margin-top: 15px;
+            width: 100%;
+        }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .bg{
+        background-position: 50% 30%; 
+    }
+
+    .landing{
+        display: inline;
+        font-size: 10px;
+       
+        .right{
+            margin: 0;
+            padding: 0;
+            img{
+                width: 100%;
+               
+            }
+        }
+    }
+    .cards{
+        display: inline;
+        .card{
+            margin-top: 15px;
+            width: 100%;
+        }
+    }
+  }
